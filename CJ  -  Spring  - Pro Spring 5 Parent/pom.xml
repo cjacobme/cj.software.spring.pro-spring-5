@@ -19,5 +19,6 @@
 	<description>Parent Project for my Experiments with Pro Spring 5</description>
 	
 	<properties>
+	   <springVersion>5.0.4.BUILD-SNAPSHOT</springVersion>
 	</properties>
 </project>
