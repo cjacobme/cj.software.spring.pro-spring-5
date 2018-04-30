@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>cj.software.spring.pro-spring-5</groupId>
+	<artifactId>parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<parent>
+	    <groupId>cj.software</groupId>
+	    <artifactId>parent</artifactId>
+	    <version>1-SNAPSHOT</version>
+	</parent>
+	
+	<packaging>pom</packaging>
+	
+	<name>CJ  -  Spring  - Pro Spring 5 Parent</name>
+	<description>Parent Project for my Experiments with Pro Spring 5</description>
+	
+	<properties>
+	</properties>
+</project>
