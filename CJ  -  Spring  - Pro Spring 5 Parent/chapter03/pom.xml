@@ -15,5 +15,6 @@
 	<name>Chapter 03</name>
 	<modules>
 		<module>injection</module>
+		<module>field-injection</module>
 	</modules>
 </project>
