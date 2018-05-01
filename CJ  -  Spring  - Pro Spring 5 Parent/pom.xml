@@ -19,9 +19,17 @@
 	<description>Parent Project for my Experiments with Pro Spring 5</description>
 
 	<properties>
+		<!-- Spring -->
 		<springVersion>5.0.4.BUILD-SNAPSHOT</springVersion>
+
+		<!-- misc -->
 		<slf4j.version>1.7.25</slf4j.version>
 		<logback.version>1.2.3</logback.version>
+
+		<!-- Test -->
+		<junit.version>4.12</junit.version>
+		<mockito.version>2.0.2-beta</mockito.version>
+		<assertj.version>3.9.1</assertj.version>
 	</properties>
 
 	<repositories>
@@ -64,6 +72,26 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>jcl-over-slf4j</artifactId>
 				<version>${slf4j.version}</version>
+			</dependency>
+
+			<!-- Test -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-all</artifactId>
+				<version>${mockito.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.assertj</groupId>
+				<artifactId>assertj-core</artifactId>
+				<version>${assertj.version}</version>
+				<scope>test</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
