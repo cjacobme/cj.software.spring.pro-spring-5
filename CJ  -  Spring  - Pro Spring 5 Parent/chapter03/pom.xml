@@ -16,5 +16,6 @@
 	<modules>
 		<module>injection</module>
 		<module>field-injection</module>
+		<module>simple-types</module>
 	</modules>
 </project>
