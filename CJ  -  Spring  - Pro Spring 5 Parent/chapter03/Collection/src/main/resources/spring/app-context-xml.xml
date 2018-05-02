@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean id="lyricHolder" class="cj.software.spring.pro5.ch03.xml.LyricHolder"/>
+	
+	<bean id="allCollections" class="cj.software.spring.pro5.ch03.xml.AllCollections">
+		<property name="map">
+			<map>
+				<entry key="someValue" value="It's Friday and it's weekend"/>
+				<entry key="someBean" value-ref="lyricHolder"/>
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="firstName">John</prop>
+				<prop key="lastName">Young</prop>
+			</props>
+		</property>
+		<property name="set">
+			<set>
+				<value>I can't believe I get to see your face</value>
+				<ref bean="lyricHolder"/>
+			</set>
+		</property>
+		<property name="list">
+			<list>
+				<value>You've been working and I've been waiting</value>
+				<ref bean="lyricHolder"/>
+			</list>
+		</property>
+	</bean>
+</beans>

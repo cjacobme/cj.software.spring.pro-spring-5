@@ -18,5 +18,6 @@
 		<module>field-injection</module>
 		<module>simple-types</module>
 		<module>hierarchical-context</module>
+		<module>Collection</module>
 	</modules>
 </project>
