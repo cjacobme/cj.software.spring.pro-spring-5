@@ -19,5 +19,6 @@
 		<module>simple-types</module>
 		<module>hierarchical-context</module>
 		<module>Collection</module>
+		<module>naming</module>
 	</modules>
 </project>
