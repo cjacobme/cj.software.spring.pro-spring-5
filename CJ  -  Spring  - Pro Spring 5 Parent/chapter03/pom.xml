@@ -21,5 +21,6 @@
 		<module>Collection</module>
 		<module>naming</module>
 		<module>bean-instantiation-mode</module>
+		<module>bean-autowiring</module>
 	</modules>
 </project>
