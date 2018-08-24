@@ -22,5 +22,6 @@
 		<module>naming</module>
 		<module>bean-instantiation-mode</module>
 		<module>bean-autowiring</module>
+		<module>bean-inheritance</module>
 	</modules>
 </project>
