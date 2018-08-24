@@ -99,6 +99,7 @@
 	<modules>
 		<module>chapter02_</module>
 		<module>chapter03</module>
+		<module>chapter04</module>
 	</modules>
 
 </project>
