@@ -8,7 +8,7 @@ public class Singer
 {
 	private static final long serialVersionUID = 1L;
 
-	private static final String DEFAULT_NAME = "Eric Clapton";
+	static final String DEFAULT_NAME = "Eric Clapton";
 
 	private String name;
 

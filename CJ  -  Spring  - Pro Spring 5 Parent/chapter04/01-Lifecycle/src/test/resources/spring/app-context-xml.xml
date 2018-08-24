@@ -5,22 +5,30 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd"
-    default-lazy-init="true">
-    
-    <bean id="singerOne"
-    	class="cj.software.spring.pro5.ch04.lifecycle.Singer"
-    	init-method="init"
-    	p:name="Billy Joe Armstrong"
-    	p:age="45"/>
-    
-    <bean id="singerTwo"
-    	class="cj.software.spring.pro5.ch04.lifecycle.Singer"
-    	init-method="init"
-    	p:age="72"/>
-    
-    <bean id="singerThree"
-    	class="cj.software.spring.pro5.ch04.lifecycle.Singer"
-    	init-method="init"
-    	p:name="Muddy Waters"/>
-    
+	default-lazy-init="true">
+
+	<bean id="singerOne"
+		class="cj.software.spring.pro5.ch04.lifecycle.Singer"
+		init-method="init" p:name="Billy Joe Armstrong" p:age="45" />
+
+	<bean id="singerTwo"
+		class="cj.software.spring.pro5.ch04.lifecycle.Singer"
+		init-method="init" p:age="72" />
+
+	<bean id="singerThree"
+		class="cj.software.spring.pro5.ch04.lifecycle.Singer"
+		init-method="init" p:name="Muddy Waters" />
+
+	<bean id="singerOneIf"
+		class="cj.software.spring.pro5.ch04.lifecycle.SingerWithInterface"
+		p:name="Mick Jagger" p:age="82" />
+
+	<bean id="singerTwoIf"
+		class="cj.software.spring.pro5.ch04.lifecycle.SingerWithInterface"
+		p:age="75" />
+
+	<bean id="singerThreeIf"
+		class="cj.software.spring.pro5.ch04.lifecycle.SingerWithInterface"
+		p:name="No-Ager" />
+
 </beans>
