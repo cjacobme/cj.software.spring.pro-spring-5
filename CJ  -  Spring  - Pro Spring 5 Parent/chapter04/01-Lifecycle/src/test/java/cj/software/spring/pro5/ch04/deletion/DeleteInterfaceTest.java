@@ -8,7 +8,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 import ch.qos.logback.classic.Logger;
 
-public class DeleteInMethodTest
+public class DeleteInterfaceTest
 {
 	private Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(
 			this.getClass());
@@ -19,7 +19,7 @@ public class DeleteInMethodTest
 		GenericXmlApplicationContext lCtx = new GenericXmlApplicationContext(
 				"classpath:spring/file-delete-context.xml");
 
-		FileHolder lFileHolder = (FileHolder) lCtx.getBean("deleteOnExit");
+		FileHolderWithIf lFileHolder = (FileHolderWithIf) lCtx.getBean("deleteOnExitIf");
 		this.logger.info("loaded bean: {}", lFileHolder.getFilePath());
 
 		lCtx.close();
@@ -27,4 +27,5 @@ public class DeleteInMethodTest
 		this.logger.info("destroy was called: {}", String.valueOf(lFileHolder.isFileDeleted()));
 		assertThat(lFileHolder.isFileDeleted()).as("file is deleted").isTrue();
 	}
+
 }

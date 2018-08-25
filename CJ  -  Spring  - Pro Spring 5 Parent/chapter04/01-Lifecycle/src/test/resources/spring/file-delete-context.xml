@@ -9,7 +9,11 @@
 	
 	<bean id="deleteOnExit"
 		class="cj.software.spring.pro5.ch04.deletion.FileHolder"
-		destroy-method="destroy"
+		destroy-method="closeMe"
 		p:filePath="#{systemProperties['java.io.tmpdir']}test.txt" />
+	
+	<bean id="deleteOnExitIf"
+		class="cj.software.spring.pro5.ch04.deletion.FileHolderWithIf"
+		p:filePath="#{systemProperties['java.io.tmpdir']}testIf.txt" />
 
 </beans>

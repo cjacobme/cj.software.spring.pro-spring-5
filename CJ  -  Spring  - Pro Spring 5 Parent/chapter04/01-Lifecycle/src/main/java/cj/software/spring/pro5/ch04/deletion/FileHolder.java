@@ -26,7 +26,7 @@ public class FileHolder
 		this.fileDeleted = false;
 	}
 
-	public void destroy()
+	public void closeMe()
 	{
 		this.fileDeleted = false;
 		if (!this.file.delete())
@@ -47,6 +47,11 @@ public class FileHolder
 	public void setFilePath(String pFilePath)
 	{
 		this.filePath = pFilePath;
+	}
+
+	public File getFile()
+	{
+		return this.file;
 	}
 
 	public boolean isFileDeleted()
