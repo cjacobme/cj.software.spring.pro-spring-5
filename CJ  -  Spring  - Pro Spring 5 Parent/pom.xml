@@ -20,7 +20,7 @@
 
 	<properties>
 		<!-- Spring -->
-		<springVersion>5.2.22.RELEASE</springVersion>
+		<springVersion>6.1.13</springVersion>
 
 		<!-- misc -->
 		<slf4j.version>1.7.25</slf4j.version>
